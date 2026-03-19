@@ -67,3 +67,12 @@ body {
 .orb-float {
 	animation: orbFloat 8s ease-in-out infinite;
 }
+
+
+.pattern-layer {
+	background-image:
+		linear-gradient(to right, rgba(9, 30, 52, 0.080) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(9, 30, 52, 0.080) 1px, transparent 1px);
+	background-size: 36px 36px;
+	mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
+}

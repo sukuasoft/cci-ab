@@ -7,6 +7,7 @@ function App() {
     <main className="relative min-h-screen overflow-hidden px-6 py-10 md:px-10">
       <div className="absolute -top-28 -left-20 h-72 w-72 rounded-full bg-[#D62828]/20 blur-3xl orb-float" />
       <div className="absolute -bottom-28 -right-16 h-72 w-72 rounded-full bg-[#2A9D8F]/20 blur-3xl orb-float [animation-delay:1.2s]" />
+            <div className="pointer-events-none absolute inset-0 pattern-layer" />
 
       <section className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-4xl items-center justify-center">
         <div className="w-full rounded-3xl border border-white/50 bg-white/65 p-8 text-center shadow-2xl shadow-[#1D3557]/15 backdrop-blur-xl md:p-12 fade-up">
