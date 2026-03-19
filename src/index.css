@@ -69,6 +69,65 @@ body {
 }
 
 
+.construction-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.65);
+	border-radius: 1.5rem;
+	background: linear-gradient(155deg, rgba(255, 255, 255, 0.85), rgba(241, 248, 255, 0.75));
+	padding: 1.5rem;
+	box-shadow: 0 20px 40px rgba(29, 53, 87, 0.14);
+	backdrop-filter: blur(8px);
+}
+
+.video-shell {
+	position: relative;
+	width: 100%;
+	margin-top: 0.4rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.construction-video {
+	display: block;
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	filter: saturate(1.04) contrast(1.06) brightness(0.9);
+	transform: scale(1.02);
+}
+
+.video-vignette {
+	position: absolute;
+	inset: 0;
+pointer-events: none;
+}
+
+.video-chip {
+	position: absolute;
+	left: 0.8rem;
+	top: 0.8rem;
+	display: inline-block;
+	border-radius: 999px;
+	padding: 0.24rem 0.62rem;
+	background: rgba(255, 255, 255, 0.88);
+	border: 1px solid rgba(29, 53, 87, 0.16);
+	font-size: 0.66rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #1d3557;
+}
+
+@media (max-width: 1024px) {
+	.construction-video {
+		height: 250px;
+	}
+}
+
+
 .pattern-layer {
 	background-image:
 		linear-gradient(to right, rgba(9, 30, 52, 0.080) 1px, transparent 1px),
